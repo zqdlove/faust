@@ -12,7 +12,7 @@ test:
 help:
     @echo 'Management commands:'
     @echo 
-    @echo 'Usage:'
+    @echo 'Usage:' 
     @echo '  make run        Run the project.'
     @echo '  make build      Build the project.'
     @echo '  make tag        build the project.'
