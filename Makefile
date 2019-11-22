@@ -3,6 +3,7 @@ VERSION=1.13.4
 GOCMD=go
 GORUN=$(GOCMD) run
 GOTESt=$(GOCMD) test
+GOBUILD=$(GOCMD) build
 
 default: help
 
@@ -18,7 +19,11 @@ help:
 	@echo 'Usage:' 
 	@echo '  make run        Run the project.'
 	@echo '  make build      Build the project.'
-	@echo '  make tag        build the project.'
+	@echo '  make tag        Tagged the project image.'
 	@echo '  make push       Push tagged images to registry.'
 	@echo '  make clean      Clean the project.'
 	@echo '  make test       Run tests on a compiled project.'
+	@echo 
+
+build:
+	$(GOBUILD)
