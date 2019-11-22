@@ -3,11 +3,14 @@ VERSION=1.13.4
 GOCMD=go
 GORUN=$(GOCMD) run
 GOTESt=$(GOCMD) test
+
+default: help
+
 run:
 	$(GORUN) main.go
 
 test:
-	$(GOTESt) -v .\hello\hello_test.go
+	$(GOTESt) -v ./hello/hello_test.go
 
 help:
 	@echo 'Management commands:'
